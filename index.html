@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="inicio">
+            <h1>Biblia</h1>
+            <strong>Versão:<select name="versão" id="versao">
+                    <option value="ra"> Almeida Revista e Atualizada</option>
+                    <option value="acf"> Almeida Corrigida Fiel</option>
+                    <option value="nvi">NVI</option>
+                    <option value="kjv">King James Version (English)</option>
+                    <option value="bbe">Bible in Basic English (English)</option>
+                    <option value="apee">Almeida Pensamento Esquemático e Exegético(Português de Portugal)</option>
+                    <option value="rvr">Reina-Valera(Espanhol)</option>
+
+                </select>
+                Livro: <select name="Livro" id="livro">
+                    <!--Velho testamento-->
+                    <option value="gn">Gênesis</option>
+                    <option value="ex">Êxodo</option>
+                    <option value="lv">Levítico</option>
+                    <option value="nm">Números</option>
+                    <option value="dt">Deuteronômio</option>
+                    <option value="js">Josué</option>
+                    <option value="jz">Juízes</option>
+                    <option value="rt">Rute</option>
+                    <option value="1sm">1 Samuel</option>
+                    <option value="2sm">2 Samuel</option>
+                    <option value="1rs">1 Reis</option>
+                    <option value="2rs">2 Reis</option>
+                    <option value="1cr">1 Crônicas</option>
+                    <option value="2cr">2 Crônicas</option>
+                    <option value="ed">Esdras</option>
+                    <option value="ne">Neemias</option>
+                    <option value="et">Ester</option>
+                    <option value="job">Jó</option>
+                    <option value="sl">Salmos</option>
+                    <option value="pv">Provérbios</option>
+                    <option value="ec">Eclesiastes</option>
+                    <option value="ct">Cantares de Salomão (Cântico dos
+                        Cânticos)</option>
+                    <option value="is">Isaías</option>
+                    <option value="jr">Jeremias</option>
+                    <option value="lm">Lamentações de Jeremias</option>
+                    <option value="ez">Ezequiel</option>
+                    <option value="dn">Daniel</option>
+                    <option value="os">Oséias</option>
+                    <option value="jl">Joel</option>
+                    <option value="am">Amós</option>
+                    <option value="ob">Obadias</option>
+                    <option value="jn">Jonas</option>
+                    <option value="mq">Miquéias</option>
+                    <option value="na">Naum</option>
+                    <option value="hc">Habacuque</option>
+                    <option value="sf">Sofonias</option>
+                    <option value="ag">Ageu</option>
+                    <option value="zc">Zacarias</option>
+                    <option value="ml">Malaquias</option>
+                    <!--Novo Testamento-->
+                    <option value="mt">Mateus</option>
+                    <option value="mc">Marcos</option>
+                    <option value="lc">Lucas</option>
+                    <option value="jo">João</option>
+                    <option value="at">Atos dos Apóstolos</option>
+                    <option value="rm">Romanos</option>
+                    <option value="1co">1 Coríntios</option>
+                    <option value="2co">2 Coríntios</option>
+                    <option value="gl">Gálatas</option>
+                    <option value="ef">Efésios</option>
+                    <option value="fp">Filipenses</option>
+                    <option value="cl">Colossenses</option>
+                    <option value="1ts">1 Tessalonicenses</option>
+                    <option value="2ts">2 Tessalonicenses</option>
+                    <option value="1tm">1 Timóteo</option>
+                    <option value="2tm">2 Timóteo</option>
+                    <option value="tt">Tito</option>
+                    <option value="fm">Filemom</option>
+                    <option value="hb">Hebreus</option>
+                    <option value="tg">Tiago</option>
+                    <option value="1pe">1 Pedro</option>
+                    <option value="2pe">2 Pedro</option>
+                    <option value="1jo">1 João</option>
+                    <option value="2jo">2 João</option>
+                    <option value="3jo">3 João</option>
+                    <option value="jd">Judas</option>
+                    <option value="ap">Apocalipse</option>
+
+                </select>
+                Capitulo: <input type="number" name="capit" id="capitulo" style="width: 45px; left: 45px;">
+
+                </select>
+                Versiculo: <input type="number" name="versi" id="versiculo" style="width: 45px; left: 45px;">
+
+                </select>
+
+                <input type="button" value="buscar" onclick="pesquisar()" id="botao"></strong>
+        </div>
+
+        <textarea name="resposta" id="res" cols="100" rows="20"
+            style="font-size:larger; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+        </textarea>
+    </div>
+    <footer>
+        <p>Criado por
+            <link rel="stylesheet" href="">
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
